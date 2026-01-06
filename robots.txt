@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://weidonghuang.github.io/sitemap.xml
+Sitemap: https://hdadong.github.io/weidonghuang.github.io/sitemap.xml
