@@ -1,5 +1,375 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Weidong Huang </title> <meta name="author" content="Weidong Huang"> <meta name="description" content="Reinforcement learning researcher working on world models, humanoid locomotion, and large-scale robot control. "> <meta name="keywords" content="reinforcement learning, world models, humanoid robots, robotics learning"> <link rel="stylesheet" href="/weidonghuang.github.io/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/weidonghuang.github.io/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/weidonghuang.github.io/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/weidonghuang.github.io/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/weidonghuang.github.io/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://hdadong.github.io/weidonghuang.github.io/"> <script src="/weidonghuang.github.io/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/weidonghuang.github.io/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
-    initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/weidonghuang.github.io/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/weidonghuang.github.io/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/weidonghuang.github.io/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/weidonghuang.github.io/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/weidonghuang.github.io/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/weidonghuang.github.io/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/weidonghuang.github.io/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/weidonghuang.github.io/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/weidonghuang.github.io/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/weidonghuang.github.io/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> Weidong Huang </h1> <p class="desc">Reinforcement Learning &amp; Robotics · Beihang University · Visiting Student @ BIGAI Robotics Lab</p> </header> <article> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/weidonghuang.github.io/assets/img/prof_pic_color-480.webp 480w,/weidonghuang.github.io/assets/img/prof_pic_color-800.webp 800w,/weidonghuang.github.io/assets/img/prof_pic_color-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/weidonghuang.github.io/assets/img/prof_pic_color.png?de9fb034c1a52f1a3e18ffc744713c12" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic_color.png" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </source></picture> </figure> <div class="more-info"> <p>Shenzhen &amp; Beijing, China</p> <p>bigeasthuang@gmail.com</p> <p>GitHub: <a href="https://github.com/hdadong" rel="external nofollow noopener" target="_blank">hdadong</a></p> </div> </div> <div class="clearfix"> <p>I am Weidong Huang, a master’s student at Beihang University and a visiting research engineer at the Robotics Lab of the Beijing Institute of General Artificial Intelligence (BIGAI) in Shenzhen. My work centers on reinforcement learning for robotics—world models, safe control, and imitation learning for humanoid locomotion.</p> <p>Currently, I build sim-to-real pipelines that allow humanoid robots to walk efficiently with low energy consumption. Before BIGAI, I interned at Tencent AI Lab (Honor of Kings imitation learning) and Peking University (safe RL with world models).</p> <p>Recent projects include:</p> <ul> <li> <strong>Lift Humanoid (ICLR’26 under review):</strong> Large-scale SAC pretraining plus physics-informed world-model finetuning for humanoid control.</li> <li> <strong>ECO:</strong> Energy-constrained RL with gait-symmetry constraints for energy-efficient humanoid walking.</li> <li> <strong>SafeDreamer (ICLR’24 poster):</strong> World-model-based constrained policy optimization for safe RL.</li> <li> <strong>OmniSafe:</strong> Led the model-based RL module, contributing 13k+ LOC to the SafeRL library.</li> </ul> <p>My research interests: Reinforcement Learning, World Models, Humanoid &amp; Robot Learning, Imitation Learning, Safe RL.</p> </div> <h2> <a href="/weidonghuang.github.io/news/" style="color: inherit">news</a> </h2> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">May 01, 2024</th> <td> <a class="news-title" href="/weidonghuang.github.io/news/announcement_2/">SafeDreamer at ICLR 2024</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 15, 2023</th> <td> Released <strong>Safety-Gymnasium</strong> (NeurIPS 2023), a unified benchmark for safe reinforcement learning with visual tasks — code at <a href="https://github.com/PKU-Alignment/safety-gymnasium" rel="external nofollow noopener" target="_blank">https://github.com/PKU-Alignment/safety-gymnasium</a>. </td> </tr> </table> </div> </div> <h2> <a href="/weidonghuang.github.io/blog/" style="color: inherit">latest posts</a> </h2> <div class="news"> <div class="table-responsive" style="max-height: 60vw"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Mar 26, 2025</th> <td> <a class="news-title" href="/weidonghuang.github.io/blog/2025/plotly/">a post with plotly.js</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Dec 04, 2024</th> <td> <a class="news-title" href="/weidonghuang.github.io/blog/2024/photo-gallery/">a post with image galleries</a> </td> </tr> <tr> <th scope="row" style="width: 20%">May 14, 2024</th> <td> <a class="news-title" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="2rem" height="2rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </td> </tr> </table> </div> </div> <h2> <a href="/weidonghuang.github.io/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">ICLR</abbr> </div> <div id="huang2026humanoidpretrain" class="col-sm-8"> <div class="title">Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control</div> <div class="author"> <em>Weidong Huang</em>, Zhehan Li, Hangxin Liu, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '3 more authors' ? 'Biao Hou, Yao Su, Jingwen Zhang' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.html(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>In International Conference on Learning Representations</em>, 2026 </div> <div class="periodical"> Under review </div> <div class="links"> <a href="https://openreview.net/forum?id=NEOTsyyYH7" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> <a href="https://lift-humanoid.github.io" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">IEEE T-ASE</abbr> </div> <div id="huang2025eco" class="col-sm-8"> <div class="title">ECO: Energy-Constrained Optimization with Reinforcement Learning for Humanoid Walking</div> <div class="author"> <em>Weidong Huang</em>, Jingwen Zhang, Hangxin Liu, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '2 more authors' ? 'Yaodong Yang, Yao Su' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.html(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>IEEE Transactions on Automation Science and Engineering</em>, 2025 </div> <div class="periodical"> Under review </div> <div class="links"> <a href="https://sites.google.com/view/eco-humanoid" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">JMLR</abbr> </div> <div id="ji2023omnisafe" class="col-sm-8"> <div class="title">OmniSafe: An Infrastructure for Accelerating Safe Reinforcement Learning Research</div> <div class="author"> Jiaming Ji, Jiayi Zhou, Borong Zhang, and <span class="more-authors" title="click to view 5 more authors" onclick=" var element=$(this); element.attr('title', ''); var more_authors_text=element.text() == '5 more authors' ? 'Juntao Dai, Xuehai Pan, Ruiyang Sun, Weidong Huang, others' : '5 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.html(more_authors_text.substring(0, cursorPosition + 1)); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">5 more authors</span> </div> <div class="periodical"> <em>Journal of Machine Learning Research</em>, 2023 </div> <div class="periodical"> Submitted </div> <div class="links"> <a href="https://github.com/PKU-Alignment/omnisafe" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> </div> </div> </li> </ol> </div> <div class="social"> <div class="contact-icons"> <a href="" title="CV" target="_blank"><i class="ai ai-cv"></i></a> <a href="mailto:%62%69%67%65%61%73%74%68%75%61%6E%67@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/hdadong" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="/weidonghuang.github.io/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss"></i></a> <a href="https://scholar.google.com/citations?user=xF14hmcAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> </div> <div class="contact-note">Research engineer focused on reinforcement learning, world models, and humanoid robotics. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Weidong Huang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/weidonghuang.github.io/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/weidonghuang.github.io/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/weidonghuang.github.io/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/weidonghuang.github.io/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/weidonghuang.github.io/assets/js/common.js?c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/weidonghuang.github.io/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/weidonghuang.github.io/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/weidonghuang.github.io/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/weidonghuang.github.io/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/weidonghuang.github.io/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
-    addBackToTop();
-  </script> <script type="module" src="/weidonghuang.github.io/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/weidonghuang.github.io/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/weidonghuang.github.io/assets/js/search-data.js"></script> <script src="/weidonghuang.github.io/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicklas Hansen">
+    <meta property="og:title" content="Nicklas Hansen">
+	<meta property="og:description" content="PhD candidate, UC San Diego">
+    <meta property="og:image" content="https://www.nicklashansen.com/files/me.png">
+	<meta property="og:url" content="https://www.nicklashansen.com/">
+	<meta name="twitter:card" content="summary_large_image">
+    <title>Nicklas Hansen</title>
+    <link rel="apple-touch-icon" href="files/ucsd-logo.png">
+    <link rel="icon" type="image/png" href="files/ucsd-logo.png">
+    <link rel="manifest" href="files/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showBooks() {
+            var div = document.getElementById("hidden");
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            }
+            div.scrollIntoView({behavior: "smooth", block: "start"});
+        }
+        function scrollToContact() {
+            var div = document.getElementById("contact");
+            div.scrollIntoView({behavior: "smooth", block: "start"});
+        }
+    </script>
+</head>
+<body>
+<div class="header noselect">
+    <div class="header-div content row">
+        <div class="header-profile-picture"></div>
+        <div class="header-text">
+            <div class="header-name">
+                <h1>Nicklas Hansen</h1>
+            </div>
+            <div class="header-subtitle">
+                PhD candidate, UC San Diego
+            </div>
+            <div class="header-links">
+                <a class="btn" href="javascript:void(0);" onclick="scrollToContact()">Email</a> /
+                <a class="btn" href="https://scholar.google.com/citations?hl=en&user=8wGH7wsAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> /
+                <a class="btn" href="https://github.com/nicklashansen">GitHub</a> /
+                <a class="btn" href="https://bsky.app/profile/ncklashansen.bsky.social">Bluesky</a> /
+                <a class="btn" href="https://www.linkedin.com/in/ncklas">LinkedIn</a> /
+                <a class="btn" href="files/cv.pdf">CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content" style="padding-bottom: 64px;">
+    <div>
+        <p>
+            I am a final-year PhD student at <a href="https://ucsd.edu">UC San Diego</a>, advised by Professors <a href="https://xiaolonw.github.io">Xiaolong Wang</a> and <a href="https://cseweb.ucsd.edu/~haosu">Hao Su</a>. During my PhD, I have been fortunate to intern at <a href="https://www.nvidia.com/en-us/research">NVIDIA Research</a> and Meta AI (<a href="https://ai.facebook.com">FAIR</a>), and my research has been supported by the <a href="https://blogs.nvidia.com/blog/graduate-research-fellowships-for-2024">NVIDIA Graduate Research Fellowship</a>. Before starting my PhD, I was a visiting student at <a href="https://www.berkeley.edu">UC Berkeley</a> and a research intern at <a href="https://bair.berkeley.edu">Berkeley AI Research</a>. I received my BS and MS degrees from the Technical University of Denmark (<a href="https://www.dtu.dk/english">DTU</a>).<br/><br/>
+            I am interested in building reliable, open-source algorithms for decision-making. I like robots 🤖, plants 🪴, <a href="javascript:void(0);" onclick="showBooks()">books</a> 📚, and <span class="italic">they/them</span> <a href="https://www.merriam-webster.com/dictionary/pronoun">pronouns</a> 🏳️‍🌈.
+        </p>
+    </div>
+    <div>
+        <h2 class="noselect">Publications and preprints</h2>
+        <p>Papers sorted by recency. Representative papers are <span style="background-color: #fff8df">highlighted</span>.</p>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/newt.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://www.nicklashansen.com/NewtWM">Learning Massively Multitask World Models for Continuous Control</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Hao Su*, Xiaolong Wang*<br/>
+                <span class="italic">Preprint, 2025<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/NewtWM">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2511.19584">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/newt">code</a> / <a class="btn" href="https://huggingface.co/nicklashansen/newt">models</a> / <a class="btn" href="https://huggingface.co/datasets/nicklashansen/mmbench">dataset</a> / <a class="btn btn-dark" href="bibtex/hansen2025newt.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/softhands.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://hakuna25.github.io/softhand">Learning to Design Soft Hands using Reward Models</a><br/>
+                Xueqian Bai, <span class="bold">Nicklas Hansen</span>, Adabhav Singh, Michael T. Tolley, Yan Duan, Pieter Abbeel, Xiaolong Wang, Sha Yi<br/>
+                <span class="italic">arXiv preprint, 2025<br/>
+                <a class="btn btn-orange" href="https://hakuna25.github.io/softhand">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2510.17086">pdf</a> / <a class="btn btn-dark" href="bibtex/bai2025learning.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/myochallenge.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://openreview.net/forum?id=1dSLbhErNv">MyoChallenge 2024: A New Benchmark for Physiological Dexterity and Agility in Bionic Humans</a><br/>
+                Cheryl Wang, Chun Kwang Tan, Balint K Hodossy, Shirui Lyu, [...], <span class="bold">Nicklas Hansen</span>, [...], Vikash Kumar, Vittorio Caggiano (26 authors)<br/>
+                <span class="italic">Conference on Neural Information Processing Systems (<a href="https://nips.cc">NeurIPS</a>) D&B Track, 2025<br/>
+                <a class="btn btn-red" href="https://openreview.net/forum?id=1dSLbhErNv">pdf</a> / <a class="btn" href="https://sites.google.com/view/myosuite/myochallenge/myochallenge-2024">code</a> / <a class="btn btn-dark" href="bibtex/wang2025myochallenge.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/insertion.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://openreview.net/pdf?id=DR3n6IqGKI">Generalizable Robotic Insertion with World Models</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Iretiayo Akinola, Yijie Guo, Jie Xu, Bingjie Tang, Hao Su, Xiaolong Wang, Abhishek Gupta, Dieter Fox, Yashraj Narang<br/>
+                <span class="italic">Workshop on Out-of-Distribution Generalization in Robotics at <a href="https://roboticsconference.org">RSS</a></span>, 2025<br/>
+                <a class="btn btn-red" href="https://openreview.net/pdf?id=DR3n6IqGKI">pdf</a> / <a class="btn btn-dark" href="bibtex/hansen2025insertion.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/demo3.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2503.01837">Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy and World Model Learning</a><br/>
+                Adrià López Escoriza, <span class="bold">Nicklas Hansen</span>, Stone Tao, Tongzhou Mu, Hao Su<br/>
+                <span class="italic">International Conference on Machine Learning (<a href="https://icml.cc">ICML</a>)</span>, 2025<br/>
+                <a class="btn btn-orange" href="https://adrialopezescoriza.github.io/demo3">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2503.01837">arXiv</a> / <a class="btn" href="https://github.com/adrialopezescoriza/demo3">code</a> / <a class="btn btn-dark" href="bibtex/escoriza2025demo3.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/pwm.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2407.02466">Policy Learning with Multi-Task World Models</a><br/>
+                Ignat Georgiev, Varun Giridhar, <span class="bold">Nicklas Hansen</span>, Animesh Garg<br/>
+                <span class="italic">International Conference on Learning Representations (<a href="https://iclr.cc">ICLR</a></span>), 2025<br/>
+                <a class="btn btn-orange" href="http://www.imgeorgiev.com/pwm">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2407.02466">arXiv</a> / <a class="btn" href="https://github.com/imgeorgiev/PWM">code</a> / <a class="btn" href="https://huggingface.co/imgeorgiev/pwm">models</a> / <a class="btn btn-dark" href="bibtex/georgiev2024pwm.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/puppeteer.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2405.18418">Hierarchical World Models as Visual Whole-Body Humanoid Controllers</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Jyothir S V, Vlad Sobal, Yann LeCun, Xiaolong Wang*, Hao Su*<br/>
+                <span class="italic">International Conference on Learning Representations (<a href="https://iclr.cc">ICLR</a></span>), 2025<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/rlpuppeteer">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2405.18418">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/puppeteer">code</a> / <a class="btn" href="https://drive.google.com/drive/folders/1cgt9HzquO5mcB71Krv0C0mD10scfMquO">models</a> / <a class="btn btn-dark" href="bibtex/hansen2024hierarchical.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/assetto-corsa.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2407.16680">A Simulation Benchmark for Autonomous Racing with Large-Scale Human Data</a><br/>
+                Adrian Remonda, <span class="bold">Nicklas Hansen</span>, Ayoub Raji, Nicola Musiu, Marko Bertogna, Eduardo E. Veas, Xiaolong Wang<br/>
+                <span class="italic">Conference on Neural Information Processing Systems (<a href="https://nips.cc">NeurIPS</a>) D&B Track</span>, 2024<br/>
+                <a class="btn btn-orange" href="https://assetto-corsa-gym.github.io">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2407.16680">arXiv</a> / <a class="btn" href="https://github.com/dasGringuen/assetto_corsa_gym">code</a> / <a class="btn" href="https://huggingface.co/datasets/dasgringuen/assettoCorsaGym">dataset</a> / <a class="btn btn-dark" href="bibtex/remonda2024simulation.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/sada.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2405.17416">A Recipe for Unbounded Data Augmentation in Visual Reinforcement Learning</a><br/>
+                Abdulaziz Almuzairee, <span class="bold">Nicklas Hansen</span>, Henrik I. Christensen<br/>
+                <span class="italic">Reinforcement Learning Conference (<a href="https://rl-conference.cc">RLC</a></span>), 2024<br/>
+                <a class="btn btn-orange" href="https://aalmuzairee.github.io/SADA">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2405.17416">arXiv</a> / <a class="btn" href="https://github.com/aalmuzairee/dmcgb2">code</a> / <a class="btn btn-dark" href="bibtex/almuzairee2024recipe.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/tdmpc2.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2310.16828">TD-MPC2: Scalable, Robust World Models for Continuous Control</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Hao Su*, Xiaolong Wang*<br/>
+                <span class="italic">International Conference on Learning Representations (<a href="https://iclr.cc">ICLR</a></span>), 2024 (<span class="bold" style="color: #f09228;">Spotlight</span>)<br/>
+                <a class="btn btn-orange" href="https://www.tdmpc2.com">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.16828">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc2">code</a> / <a class="btn" href="https://www.tdmpc2.com/models">models</a> / <a class="btn" href="https://www.tdmpc2.com/dataset">dataset</a> / <a class="btn btn-dark" href="bibtex/hansen2024tdmpc2.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/rtx.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2310.08864">Open X-Embodiment: Robotic Learning Datasets and RT-X Models</a><br/>
+                Open X-Embodiment, [...], <span class="bold">Nicklas Hansen</span>, [...] (200+ authors)<br/>
+                <span class="italic">International Conference on Robotics and Automation (<a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra">ICRA</a></span>), 2024<br/>
+                <a class="btn btn-orange" href="https://robotics-transformer-x.github.io">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.08864">arXiv</a> / <a class="btn" href="https://console.cloud.google.com/storage/browser/gresearch/robotics/open_x_embodiment_and_rt_x_oss;tab=objects?prefix=&forceOnObjectsSortingFiltering=false">code</a> / <a class="btn" href="https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit#gid=0">dataset</a> / <a class="btn btn-dark" href="bibtex/open_x_embodiment_rt_x.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/modemv2.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2309.14236">MoDem-V2: Visuo-Motor World Models for Real-World Robot Manipulation</a><br/>
+                Patrick Lancaster, <span class="bold">Nicklas Hansen</span>, Aravind Rajeswaran, Vikash Kumar<br/>
+                <span class="italic">International Conference on Robotics and Automation (<a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra">ICRA</a></span>), 2024<br/>
+                <a class="btn btn-orange" href="https://sites.google.com/view/modem-v2">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2309.14236">arXiv</a> / <a class="btn" href="https://github.com/facebookresearch/modemv2">code</a> / <a class="btn btn-dark" href="bibtex/lancaster2024modemv2.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/gnfactor.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2308.16891">GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields</a><br/>
+                Yanjie Ze*, Ge Yan*, Yueh-Hua Wu*, Annabella Macaluso, Yuying Ge, Jianglong Ye, <span class="bold">Nicklas Hansen</span>, Li Erran Li, Xiaolong Wang<br/>
+                <span class="italic">Conference on Robot Learning (<a href="https://corl2022.org">CoRL</a>)</span>, 2023 (<span class="bold" style="color: #f04328;">Oral</span>)</span><br/>
+                <a class="btn btn-orange" href="https://yanjieze.com/GNFactor">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2308.16891">arXiv</a> / <a class="btn" href="https://github.com/YanjieZe/GNFactor">code</a> / <a class="btn btn-dark" href="bibtex/ze2023gnfactor.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/owm.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2310.16029">Finetuning Offline World Models in the Real World</a><br/>
+                Yunhai Feng*, <span class="bold">Nicklas Hansen*</span>, Ziyan Xiong*, Chandramouli Rajagopalan, Xiaolong Wang<br/>
+                <span class="italic">Conference on Robot Learning (<a href="https://corl2022.org">CoRL</a>)</span>, 2023 (<span class="bold" style="color: #f04328;">Oral</span>)</span><br/>
+                <a class="btn btn-orange" href="https://www.yunhaifeng.com/FOWM">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.16029">arXiv</a> / <a class="btn" href="https://github.com/fyhMer/fowm">code</a> / <a class="btn btn-dark" href="bibtex/feng2023finetuning.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/lfs.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2212.05749">On Pre-Training for Visuo-Motor Control: Revisiting a Learning-from-Scratch Baseline</a><br/>
+                <span class="bold">Nicklas Hansen*</span>, Zhecheng Yuan*, Yanjie Ze*, Tongzhou Mu*, Aravind Rajeswaran+, Hao Su+, Huazhe Xu+, Xiaolong Wang+<br/>
+                <span class="italic">International Conference on Machine Learning (<a href="https://icml.cc">ICML</a>)</span>, 2023<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2212.05749">arXiv</a> / <a class="btn" href="https://github.com/gemcollector/learning-from-scratch">code</a> / <a class="btn btn-dark" href="bibtex/hansen2023lfs.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/modem.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2212.05698">MoDem: Accelerating Visual Model-Based Reinforcement Learning with Demonstrations</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Yixin Lin, Hao Su, Xiaolong Wang, Vikash Kumar, Aravind Rajeswaran<br/>
+                <span class="italic">International Conference on Learning Representations (<a href="https://iclr.cc">ICLR</a></span>), 2023<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/modemrl">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2212.05698">arXiv</a> / <a class="btn" href="https://github.com/facebookresearch/modem">code</a> / <a class="btn btn-dark" href="bibtex/hansen2022modem.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/xtra.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2210.10763">On the Feasibility of Cross-Task Transfer with Model-Based Reinforcement Learning</a><br/>
+                Yifan Xu*, <span class="bold">Nicklas Hansen*</span>, Zirui Wang, Yung-Chieh Chan, Hao Su, Zhuowen Tu<br/>
+                <span class="italic">International Conference on Learning Representations (<a href="https://iclr.cc">ICLR</a></span>), 2023<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/xtra">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2210.10763">arXiv</a> / <a class="btn" href="https://github.com/mlpc-ucsd/XTRA">code</a> / <a class="btn btn-dark" href="bibtex/xu2022xtra.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/3d4rl.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2210.07241">Visual Reinforcement Learning with Self-Supervised 3D Representations</a><br/>
+                Yanjie Ze*, <span class="bold">Nicklas Hansen*</span>, Yinbo Chen, Mohit Jain, Xiaolong Wang<br/>
+                <span class="italic">Robotics and Automation Letters (<a href="https://www.ieee-ras.org/publications/ra-l">RA-L</a>)</span>, 2023<br/>
+                <a class="btn btn-orange" href="https://yanjieze.com/3d4rl">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2210.07241">arXiv</a> / <a class="btn" href="https://github.com/YanjieZe/rl3d">code</a> / <a class="btn btn-dark" href="bibtex/ze2022rl3d.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/graphirl.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2207.14299">Graph Inverse Reinforcement Learning from Diverse Videos</a><br/>
+                Sateesh Kumar, Jonathan Zamora*, <span class="bold">Nicklas Hansen*</span>, Rishabh Jangir, Xiaolong Wang<br/>
+                <span class="italic">Conference on Robot Learning (<a href="https://corl2022.org">CoRL</a>)</span>, 2022 (<span class="bold" style="color: #f04328;">Oral</span>)</span><br/>
+                <a class="btn btn-orange" href="https://sateeshkumar21.github.io/GraphIRL">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2207.14299">arXiv</a> / <a class="btn" href="https://github.com/SateeshKumar21/graph-inverse-rl">code</a> / <a class="btn btn-dark" href="bibtex/kumar2022inverse.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/tdmpc.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2203.04955">Temporal Difference Learning for Model Predictive Control</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Xiaolong Wang*, Hao Su*<br/>
+                <span class="italic">International Conference on Machine Learning (<a href="https://icml.cc">ICML</a>)</span>, 2022<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/td-mpc">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2203.04955">arXiv</a> / <a class="btn" href="https://www.nicklashansen.com/td-mpc/slides.pdf">slides</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc">code</a> / <a class="btn btn-dark" href="bibtex/hansen2022tdmpc.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/LookCloser.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2201.07779">Look Closer: Bridging Egocentric and Third-Person Views with Transformers for Robotic Manipulation</a><br/>
+                Rishabh Jangir*, <span class="bold">Nicklas Hansen*</span>, Sambaran Ghosal, Mohit Jain, Xiaolong Wang<br/>
+                <span class="italic">Robotics and Automation Letters (<a href="https://www.ieee-ras.org/publications/ra-l">RA-L</a>)</span>, 2022<br/>
+                <span class="italic">International Conference on Robotics and Automation (<a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra">ICRA</a></span>), 2022<br/>
+                <a class="btn btn-orange" href="https://jangirrishabh.github.io/lookcloser">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2201.07779">arXiv</a> / <a class="btn" href="https://github.com/jangirrishabh/look-closer">code</a> / <a class="btn btn-dark" href="bibtex/jangir2022look.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/LocoTransformer.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2107.03996">Learning Vision-Guided Quadrupedal Locomotion End-to-End with Cross-Modal Transformers</a><br/>
+                Ruihan Yang*, Minghao Zhang*, <span class="bold">Nicklas Hansen</span>, Huazhe Xu, Xiaolong Wang<br/>
+                <span class="italic">International Conference on Learning Representations (<a href="https://iclr.cc">ICLR</a></span>), 2022 (<span class="bold" style="color: #f09228;">Spotlight</span>)<br/>
+                <a class="btn btn-orange" href="https://rchalyang.github.io/LocoTransformer">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2107.03996">arXiv</a> / <a class="btn" href="https://github.com/Mehooz/vision4leg">code</a> / <a class="btn btn-dark" href="bibtex/yang2021learning.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/StabilizedQValueEstimation.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2107.00644">Stabilizing Deep Q-Learning with ConvNets and Vision Transformers under Data Augmentation</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Hao Su, Xiaolong Wang<br/>
+                <span class="italic">Conference on Neural Information Processing Systems (<a href="https://nips.cc">NeurIPS</a>)</span>, 2021<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/SVEA">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2107.00644">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">code</a> / <a class="btn btn-dark" href="bibtex/hansen2021stabilizing.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/SoftDataAugmentation.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2011.13389">Generalization in Reinforcement Learning by Soft Data Augmentation</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Xiaolong Wang<br/>
+                <span class="italic">International Conference on Robotics and Automation (<a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra">ICRA</a></span>), 2021<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/SODA">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2011.13389">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">code</a> / <a class="btn btn-dark" href="bibtex/hansen2021softda.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="highlight publication row clearfix">
+            <div class="row-media" style="background-image: url(files/SelfSupervisedPolicyAdaptation.gif);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2007.04309">Self-Supervised Policy Adaptation during Deployment</a><br/>
+                <span class="bold">Nicklas Hansen</span>, Rishabh Jangir, Yu Sun, Guillem Alenyà, Pieter Abbeel, Alexei A. Efros, Lerrel Pinto, Xiaolong Wang<br/>
+                <span class="italic">International Conference on Learning Representations (<a href="https://iclr.cc">ICLR</a></span>), 2021 (<span class="bold" style="color: #f09228;">Spotlight</span>)<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/PAD">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2007.04309">arXiv</a> / <a class="btn btn-purple" href="https://bair.berkeley.edu/blog/2021/02/25/ss-adaptation">blog</a> / <a class="btn" href="https://github.com/nicklashansen/policy-adaptation-during-deployment">code</a> / <a class="btn btn-dark" href="bibtex/hansen2021deployment.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/ShortTermBloodGlucosePrediction.png)"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2002.02805">Short Term Blood Glucose Prediction based on Continuous Glucose Monitoring Data</a><br/>
+                Ali Mohebbi, Alexander R. Johansen, <span class="bold">Nicklas Hansen</span>, Peter E. Christensen, Jens M. Tarp, Morten L. Jensen, Henrik Bengtsson, Morten Mørup<br/>
+                <span class="italic">Engineering in Medicine and Biology Conference (<a href="https://embc.embs.org/2020">EMBC</a>)</span>, 2020<br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2002.02805">arXiv</a> / <a class="btn btn-dark" href="bibtex/mohebbi2020shortterm.txt">bibtex</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="noselect">Select open-source projects</h2>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/tdmpc2-world-model.png);"></div>
+            <div class="row-text">
+                <a class="bold" href="https://github.com/nicklashansen/tdmpc">TD-MPC2 Official Implementation<span class="stars">&#11088; 705</span></a><br/>
+                <span class="bold">Nicklas Hansen</span>, Hao Su*, Xiaolong Wang*<br/>
+                Oct 2023<br/>
+                <a class="btn btn-orange" href="https://tdmpc2.com">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2310.16828">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc2">code</a> / <a class="btn btn-dark" href="bibtex/hansen2024tdmpc2.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/tdmpc-world-model.png);"></div>
+            <div class="row-text">
+                <a class="bold" href="https://github.com/nicklashansen/tdmpc">TD-MPC Official Implementation<span class="stars">&#11088; 485</span></a><br/>
+                <span class="bold">Nicklas Hansen</span>, Xiaolong Wang*, Hao Su*<br/>
+                Mar 2022<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/td-mpc">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2203.04955">arXiv</a> / <a class="btn" href="https://www.nicklashansen.com/td-mpc/slides.pdf">slides</a> / <a class="btn" href="https://github.com/nicklashansen/tdmpc">code</a> / <a class="btn btn-dark" href="bibtex/hansen2022tdmpc.txt">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix">
+            <div class="row-media" style="background-image: url(files/dmcontrol-gb.png);"></div>
+            <div class="row-text">
+                <a class="bold" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">DMControl Generalization Benchmark<span class="stars">&#11088; 182</span></a><br/>
+                <span class="bold">Nicklas Hansen</span>, Xiaolong Wang<br/>
+                Nov 2020<br/>
+                <a class="btn btn-orange" href="https://www.nicklashansen.com/SODA/">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2011.13389">arXiv</a> / <a class="btn" href="https://github.com/nicklashansen/dmcontrol-generalization-benchmark">code</a> / <a class="btn btn-dark" href="bibtex/hansen2020softda.txt">bibtex</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="noselect">Press coverage</h2>
+        I have been mentioned in various media in connection with my research. Here's a few select articles:
+        <div class="row clearfix" style="margin-top: 16px;">
+            <a href="https://blogs.nvidia.com/blog/national-robotics-week-2025#nicklas-hansen" class="press row-media" style="background-image: url(files/nvidia.png)"></a>
+            <a href="https://generallyintelligent.com/podcast/2022-12-16-podcast-episode-25-nicklas-hansen" class="press row-media" style="background-image: url(files/generallyintelligent.png)"></a>
+            <a href="https://bdtechtalks.com/2022/04/04/reinforcement-learning-td-mpc" class="press row-media" style="background-image: url(files/bdtalks.png)"></a>
+            <a href="https://bair.berkeley.edu/blog/2021/02/25/ss-adaptation" class="press row-media" style="background-image: url(files/bair.png)"></a>
+            <a href="https://blog.deeplearning.ai/blog/the-batch-predicting-car-crashes-profiting-from-deepfakes-piloting-drone-swarms-grading-data" class="press row-media" style="background-image: url(https://i.imgur.com/eoASzgo.png)"></a>
+        </div>
+    </div>
+    <div id="hidden" style="display: none;">
+        <h2 class="noselect">Book recommendations 📚</h2>
+        
+        <span class="bold">Non-fiction</span>
+        <ul>
+            <li>Kate Manne, <span class="bold">Entitled</span></li>
+            <li>Caroline Criado-Perez, <span class="bold">Invisible Women</span></li>
+            <li>Timothy D. Snyder, <span class="bold">On Tyranny</span></li>
+            <li>Jonathan Metzl, <span class="bold">Dying of Whiteness</span></li>
+            <li>Hannah McElhinney, <span class="bold">Rainbow History Class</span></li>
+            <li>Maia Kobabe, <span class="bold">Gender Queer: A Memoir</span></li>
+            <li>Trevor Noah, <span class="bold">Born A Crime</span></li>
+            <li>Yuval Noah Harari, <span class="bold">Sapiens: A Brief History of Humankind</span></li>
+            <li>Richard S. Sutton & Andrew G. Barto, <span class="bold">Reinforcement Learning: An Introduction</span></li>
+        </ul>
+        <span class="bold">Fiction</span>
+        <ul>
+            <li>Jacqueline Harpman, <span class="bold">I Who Have Never Known Men</span></li>
+            <li>Jennifer L. Armentrout and Friends, <span class="bold">Meet Cute</span></li>
+            <li>Laura Bates, <span class="bold">The Burning</span></li>
+            <li>Carl Hiaasen, <span class="bold">Squeeze Me</span></li>
+            <li>George Orwell, <span class="bold">Animal Farm</span></li>
+        </ul>
+    </div>
+    <div id="contact" class="noselect">
+        <h2>Contact</h2>
+        You are welcome to contact me regarding my research! My email is <span class="bold">hello</span> [at] <span class="bold">nicklashansen</span> 。com
+    </div>
+</div>
+<div class="footer noselect">
+    <div class="footer-content">
+        &copy; 2025 Nicklas Hansen. No web trackers. Design is my own. You are welcome to fork it <a style="color: white; text-decoration: underline;" href="https://github.com/nicklashansen/nicklashansen.github.io">here</a>.
+    </div>
+</div>
+</body>
+</html>

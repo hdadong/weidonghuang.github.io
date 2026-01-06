@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://hdadong.github.io/weidonghuang.github.io/sitemap.xml
