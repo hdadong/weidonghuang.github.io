@@ -448,10 +448,7 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-submitted-our-humanoid-control-paper-towards-bridging-the-gap-between-large-scale-pretraining-and-efficient-finetuning-for-humanoid-control-to-iclr-2026",
-          title: 'Submitted our humanoid control paper “Towards Bridging the Gap between Large-Scale Pretraining and...',
-          description: "",
-          section: "News",},{id: "projects-lift-humanoid",
+            },},{id: "projects-lift-humanoid",
           title: 'Lift Humanoid',
           description: "Large-scale SAC pretraining with physics-informed world-model finetuning for humanoid control.",
           section: "Projects",handler: () => {
